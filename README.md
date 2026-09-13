@@ -1,3 +1,7 @@
+
+
+# Pata Amiga - Rede de Petshops de Santa Catarina
+
 ## 1. Diagnóstico da origem
 
 Primeiro, fiz uma análise dos dados da origem para entender a estrutura e identificar os principais problemas que precisariam ser tratados durante a modelagem.
@@ -254,7 +258,6 @@ Pela classificação atual, as lojas da faixa Ouro concentram o maior faturament
 Porém, esse resultado não permite afirmar quanto foi faturado por lojas que já eram Ouro na data de cada pedido. Isso acontece porque o cadastro apresenta a faixa atual e o histórico das alterações foi sobrescrito. Uma loja que hoje está classificada como Ouro pode ter realizado parte desses pedidos quando ainda pertencia a outra faixa.
 
 Assim, o resultado permite analisar o faturamento segundo a classificação atual, mas não reconstruir a evolução histórica das faixas de franquia.
-
 
 c. Meça o que ficou de fora: pedidos sem loja identificada, entregas ainda não concluídas, itens e valores em branco.
 
