@@ -1,0 +1,12 @@
+# ----- Arquivos que não devem subir -----
+00-conferencia.sql
+
+# ----- Dados -----
+data/
+*.csv
+*.zip
+
+# ----- Python -----
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

@@ -1,0 +1,2 @@
+# Projeto desenvolvido em SQL/MySQL.
+# Não há dependências Python externas neste projeto.
