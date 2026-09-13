@@ -289,3 +289,27 @@ Os resultados mostram que existe espaço para melhorar principalmente o processo
 Na análise de expansão, Rio dos Cedros aparece como uma oportunidade que merece ser investigada, por apresentar a maior demanda proporcional. Porém, o tempo elevado de entrega e as limitações encontradas na base mostram que essa informação, sozinha, não é suficiente para definir a abertura de uma nova loja.
 
 Por isso, minha recomendação é utilizar os resultados deste projeto como base para uma análise de viabilidade mais completa, considerando capacidade operacional, logística, mercado local e qualidade dos dados antes de tomar a decisão final de expansão.
+
+
+## Estrutura dos Arquivos do Projeto no Git
+
+Pasta Principal:
+
+* .gitignore: Arquivo utilizado para definir quais arquivos e pastas não devem ser versionados no repositório.
+* requirements.txt: Arquivo informativo sobre as dependências do projeto. Este projeto não utiliza bibliotecas Python externas.
+* README.md: Documentação principal do projeto, contendo o diagnóstico da origem, tratamento dos dados, modelo dimensional, respostas às perguntas de negócio, insights e conclusão.
+
+Pasta sql/:
+
+* 01-carga-staging.sql: Realiza a carga dos dados brutos nas tabelas de staging, mantendo os dados da origem sem alterações.
+* 02-dimensoes-prontas.sql: Cria a estrutura das tabelas dimensionais, da tabela fato e da tabela de relacionamento entre loja e praça.
+* 03-dimensoes.sql: Realiza a carga, limpeza e padronização das dimensões, incluindo o tratamento das chaves e dos registros “Não Informado”.
+* 04-fato.sql: Realiza a carga da tabela fato, aplicando as regras de tratamento necessárias aos pedidos e relacionando-os às dimensões.
+* 05-perguntas.sql: Contém as consultas utilizadas para responder às cinco perguntas de negócio propostas no case.
+
+Arquivos auxiliares:
+
+* 00-conferencia.sql: Arquivo utilizado localmente para conferência e validação dos resultados durante o desenvolvimento. Não faz parte da entrega no GitHub.
+* Pasta data/: Contém os arquivos CSV utilizados como fonte para a carga dos dados. Esses arquivos não são versionados no GitHub.
+* Pasta imagens/: Contém as imagens utilizadas na documentação do projeto, incluindo o diagrama estrela do modelo dimensional.
+* Pasta docs/: Destinada à documentação complementar do projeto.
