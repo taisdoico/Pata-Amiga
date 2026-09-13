@@ -1,6 +1,13 @@
+# Pata Amiga - Rede de Petshops de Santa Catarina
 
 
 # Pata Amiga - Rede de Petshops de Santa Catarina
+
+Aluna: Taís Cristina Tagliani Doico
+Curso: Análise de Dados
+Instituição: SENAI
+Turma: T2
+Módulo: 2
 
 ## 1. Diagnóstico da origem
 
