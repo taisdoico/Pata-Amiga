@@ -113,7 +113,7 @@ Nesta etapa, respondi às cinco perguntas propostas no projeto utilizando os dad
 
 Para cada pergunta, apresentei o resultado obtido nas consultas e fiz uma análise dos dados. As respostas foram usadas para identificar os principais pontos de atenção e apoiar a recomendação final do projeto.
 
-P1. Onde está o gargalo da entrega?
+P1: Onde está o gargalo da entrega?
 
 Para analisar o tempo de entrega, comparei os intervalos entre as principais etapas do pedido, separando os resultados pelo porte da loja.
 
@@ -130,7 +130,7 @@ Nas lojas médias e grandes, esse intervalo fica em torno de 3,3 dias. Por isso,
 
 O grupo Não Informado foi mantido na tabela para representar os dados existentes na base, mas não foi utilizado para avaliar o desempenho dos portes de loja.
 
-P2. Qual categoria representa a maior parte do faturamento?
+P2: Qual categoria concentra o faturamento?
 
 Para responder essa pergunta, analisei o faturamento rateado por categoria de produto ou serviço.
 
@@ -152,7 +152,7 @@ A categoria Racao também foi a que apresentou o maior faturamento nos três por
 * Média: R$ 443.131,62
 * Pequena: R$ 164.197,55
 
-### 3. O desconto funciona igual em todo canal?
+P3: O desconto funciona igual em todo canal?
 
 Para responder essa pergunta, comparei o ticket médio dos pedidos com e sem desconto dentro de cada canal de venda. Também calculei quanto cada canal representa do faturamento total da rede.
 
@@ -171,7 +171,7 @@ Os dados mostram, portanto, que a política de desconto está associada a ticket
 
 Essa análise mostra uma associação entre desconto e ticket médio maior, mas não permite afirmar que o desconto foi a causa do aumento.
 
-### 4. Qual praça de atendimento concentra o faturamento?
+P4: Qual praça de atendimento concentra o faturamento?
 
 Para responder essa pergunta, distribuí o faturamento das lojas entre as praças de atendimento utilizando o percentual de público definido na bridge_loja_praca. Depois, comparei o faturamento rateado com o número de domicílios com pet de cada praça.
 
@@ -192,9 +192,9 @@ Para responder essa pergunta, distribuí o faturamento das lojas entre as praça
 
 A praça que concentra o maior faturamento rateado é a Vale do Itajai, com R$ 633.746,09, equivalente a 35,34% do faturamento total da rede. Ela também possui o maior número de domicílios com pet entre as praças analisadas, com 148.000.
 
-P5. Onde abrir a próxima loja, e o que os dados NÃO permitem afirmar?
+P5: Onde abrir a próxima loja, e o que os dados NÃO permitem afirmar?
 
-#### a. Ranqueie as lojas por itens vendidos por mil habitantes da cidade – não em valor absoluto – e cruze com o tempo médio de entrega.
+a. Ranqueie as lojas por itens vendidos por mil habitantes da cidade – não em valor absoluto – e cruze com o tempo médio de entrega.
 
 Para analisar essa questão, ranqueei as lojas pela quantidade de itens vendidos proporcionalmente à população da cidade, usando a medida de itens vendidos por mil habitantes. Em seguida, comparei esse indicador com o tempo médio de entrega.
 
@@ -233,9 +233,9 @@ Para analisar essa questão, ranqueei as lojas pela quantidade de itens vendidos
 | Pata Amiga Itajai Praia              | Itajaí                   |     264.054 |            798 |               3,02 |                        7,98 |
 | Pata Amiga Florianopolis Norte       | Florianópolis            |     537.213 |          1.426 |               2,65 |                        8,02 |
 
-A loja de Rio dos Cedros apresentou a maior demanda proporcional, com 41,87 itens vendidos por mil habitantes. Porém, o tempo médio de entrega foi de 14,24 dias. Os maiores índices de demanda proporcional aparecem principalmente em cidades menores e, em vários casos, também estão associados a tempos de entrega mais altos. Por isso, a demanda proporcional deve ser analisada junto com a capacidade de atendimento e o tempo de entrega.
+A loja de Rio dos Cedros apresentou a maior demanda proporcional, com 41,87 itens vendidos por mil habitantes. Porém, o tempo médio de entrega foi de 14,24 dias. O resultado mostra que uma maior demanda proporcional não significa necessariamente uma operação mais eficiente, sendo importante analisar esse indicador em conjunto com o tempo de entrega e a capacidade de atendimento.
 
-#### b. A faixa de franquia no cadastro é a de hoje: o passado foi sobrescrito. Mostre o faturamento por faixa ATUAL e explique por que isso não responde “quanto veio de lojas que JÁ ERAM Ouro na data do pedido”.
+Dessa forma, Rio dos Cedros se destaca como uma praça que merece ser considerada em uma análise de expansão, mas os dados disponíveis não são suficientes, isoladamente, para afirmar que a cidade é o melhor local para abrir uma nova loja.
 
 Para analisar essa questão, agrupei o faturamento de acordo com a faixa de franquia atualmente registrada no cadastro das lojas.
 
@@ -247,13 +247,16 @@ Para analisar essa questão, agrupei o faturamento de acordo com a faixa de fran
 | Bronze                  |              84.036,06 |               4,69% |
 | Não Informado          |                 986,30 |               0,05% |
 
+b. A faixa de franquia no cadastro é a de hoje: o passado foi sobrescrito. Mostre o faturamento por faixa ATUAL e explique por que isso não responde “quanto veio de lojas que JÁ ERAM Ouro na data do pedido”.
+
 Pela classificação atual, as lojas da faixa Ouro concentram o maior faturamento, com R$ 1.011.264,38, equivalente a 56,39% do faturamento total.
 
 Porém, esse resultado não permite afirmar quanto foi faturado por lojas que já eram Ouro na data de cada pedido. Isso acontece porque o cadastro apresenta a faixa atual e o histórico das alterações foi sobrescrito. Uma loja que hoje está classificada como Ouro pode ter realizado parte desses pedidos quando ainda pertencia a outra faixa.
 
 Assim, o resultado permite analisar o faturamento segundo a classificação atual, mas não reconstruir a evolução histórica das faixas de franquia.
 
-#### c. Meça o que ficou de fora: pedidos sem loja identificada, entregas ainda não concluídas, itens e valores em branco.
+
+c. Meça o que ficou de fora: pedidos sem loja identificada, entregas ainda não concluídas, itens e valores em branco.
 
 Para avaliar as limitações da base, conferi quantos registros ficaram sem informação em pontos importantes para a análise.
 
@@ -290,8 +293,7 @@ Na análise de expansão, Rio dos Cedros aparece como uma oportunidade que merec
 
 Por isso, minha recomendação é utilizar os resultados deste projeto como base para uma análise de viabilidade mais completa, considerando capacidade operacional, logística, mercado local e qualidade dos dados antes de tomar a decisão final de expansão.
 
-
-## Estrutura dos Arquivos do Projeto no Git
+## 8. Estrutura dos Arquivos do Projeto no Git
 
 Pasta Principal:
 
@@ -313,3 +315,18 @@ Arquivos auxiliares:
 * Pasta data/: Contém os arquivos CSV utilizados como fonte para a carga dos dados. Esses arquivos não são versionados no GitHub.
 * Pasta imagens/: Contém as imagens utilizadas na documentação do projeto, incluindo o diagrama estrela do modelo dimensional.
 * Pasta docs/: Destinada à documentação complementar do projeto.
+
+## 9. Como Executar o Projeto
+
+1. Baixe ou clone o repositório do GitHub.
+2. Abra o MySQL Workbench e conecte-se ao MySQL 8.0.
+3. Execute os scripts SQL na ordem apresentada abaixo:
+
+   1. 01-carga-staging.sql
+   2. 02-dimensoes-prontas.sql
+   3. 03-dimensoes.sql
+   4. 04-fato.sql
+   5. 05-perguntas.sql
+4. Após a execução, o banco de dados estará disponível para consultas e análises.
+5. Para validação dos resultados durante o desenvolvimento, pode ser utilizado localmente o arquivo 00-conferencia.sql.
+6. As consultas do projeto e seus resultados servem de base para a análise das perguntas de negócio e para a construção do dashboard no Power BI.
