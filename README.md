@@ -6,7 +6,6 @@ Instituição: SENAI
 Turma: T2
 Módulo: 2
 
-
 ## 1. Diagnóstico da origem
 
 Primeiro, fiz uma análise dos dados da origem para entender a estrutura e identificar os principais problemas que precisariam ser tratados durante a modelagem.
@@ -337,4 +336,3 @@ Arquivos auxiliares:
    5. 05-perguntas.sql
 4. Após a execução, o banco de dados estará disponível para consultas e análises.
 5. Para validação dos resultados durante o desenvolvimento, pode ser utilizado localmente o arquivo 00-conferencia.sql.
-6. As consultas do projeto e seus resultados servem de base para a análise das perguntas de negócio e para a construção do dashboard no Power BI.
