@@ -6,6 +6,8 @@ Instituição: SENAI
 Turma: T2
 Módulo: 2
 
+Em anexo o link do vídeo de apresentação: [www.loom.com/share/9418c25fce4c420797e28a92c59e6b79](https://www.loom.com/share/9418c25fce4c420797e28a92c59e6b79)
+
 ## 1. Diagnóstico da origem
 
 Primeiro, fiz uma análise dos dados da origem para entender a estrutura e identificar os principais problemas que precisariam ser tratados durante a modelagem.
